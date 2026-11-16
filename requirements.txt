@@ -1,3 +1,4 @@
 cairosvg
 pypdf
 Pillow
+img2pdf

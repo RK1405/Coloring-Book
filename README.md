@@ -35,6 +35,8 @@ This writes one folder per book under `output/`:
 
 - `<book>_interior_A4.pdf`: the 40-page print-ready interior (210 × 297 mm, 15 mm safe margins)
 - `<book>_kindle_cover_1600x2560.jpg`: the Kindle eBook cover
+
+`python print_cover.py` makes the KDP paperback wraparound cover (back, spine and front) for A4 trim at 360 DPI, as PDF, PNG and JPG. The spine width comes from the page count (0.002252 in per page on white paper). The bottom-right of the back is left clear for the barcode Amazon adds. Covers are set up in the `BOOKS` dictionary in that script.
 - `png_pages/`: every picture page as a 300 DPI PNG
 - `line_art/`: each drawing alone, outline only
 - `color_ref/`: each drawing alone, in colour
